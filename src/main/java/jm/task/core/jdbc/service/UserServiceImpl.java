@@ -29,6 +29,6 @@ public class UserServiceImpl implements UserService {
     }
 
     public void cleanUsersTable() {
-        userDaoJDBC.createUsersTable();
+        userDaoJDBC.cleanUsersTable();
     }
 }
