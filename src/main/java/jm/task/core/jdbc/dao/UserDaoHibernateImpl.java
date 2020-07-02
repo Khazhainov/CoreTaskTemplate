@@ -13,11 +13,7 @@ public class UserDaoHibernateImpl implements UserDao {
     private Session session;
 
     public UserDaoHibernateImpl() {
-
-    }
-
-    public UserDaoHibernateImpl(Session session) {
-        this.session = session;
+        session = Util.getSessionFactory().openSession();
     }
 
     @Override
